@@ -3,6 +3,15 @@
   <link href="/normalize.css" rel="stylesheet">
   <style>
 
+  #parentdiv {
+  position: relative;
+}
+
+#parentdiv .childdiv {
+  position: absolute;
+  bottom: 0;
+}
+
   html {
     padding:0px;
     margin: 0px;
@@ -60,19 +69,20 @@
       body {
         background: red;
       }
-    }  
+
+    } 
+    h2 {
+         font-family: "Florence", cursive;
+      } 
   </style>
 </head>
 <body>
 
-  <header id='parentDiv'{postion: relative;}>
-    
+  <header id='parentdiv'>
+   
     <h1>EdinBrunch.</h1>
 
-    <ul class='parentDiv .childDiv'{
-    position: absolute;
-     bottom: 0;
-     }>
+    <ul class='childdiv'>
 
       <li><a href="#">Reviews</a></li>
       <li><a href="#">Map</a></li>
